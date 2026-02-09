@@ -56,11 +56,11 @@ Special thanks to u/antboiy for updating `Comment.ApprovedAt` in our typedoc. We
 We’ve simplified how to request new domains for HTTP fetch (no more forms!). Now you can just add domains in your app’s configuration, and when you playtest or upload the app, the domain is automatically submitted for approval.
 
 ```tsx
-import { Devvit } from '@devvit/public-api';
+import { Devvit } from "@devvit/public-api";
 
 Devvit.configure({
   http: {
-    domains: ['my-site.com', 'another-domain.net'],
+    domains: ["my-site.com", "another-domain.net"],
   },
 });
 ```
