@@ -1,7 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# User Actions
+# User actions
 
 User actions allow your app to submit posts, submit comments, and subscribe to the current subreddit on behalf of the logged in user. These actions occur on the logged in user's account instead of the app account. This enables stronger user engagement while ensuring user control and transparency.
 
@@ -13,6 +13,13 @@ By default, apps make posts or comments using their associated app account. With
 
 - Create posts or comments on behalf of the user (from the post UI, a form, or a menu action)
 - Subscribe the user to the current subreddit
+
+### Unavailable actions
+
+Some actions are not available to apps to prevent abuse and maintain platform integrity:
+
+- **Voting** - Apps cannot upvote or downvote posts or comments, either as the app account or on behalf of the logged-in user
+- **Following/friending users** - Apps cannot follow users (on reddit.com) or add friends (on Old Reddit), either as the app account or on behalf of the logged-in user
 
 ---
 
@@ -85,8 +92,6 @@ Apps that use `submitPost()` with `runAs: 'USER'` require `userGeneratedContent`
 ---
 
 ## Example: Submit a post as the user
-
-This example uses a form to prompt the user for input and then submits a post as the user.
 
 <Tabs
   variant="pill"

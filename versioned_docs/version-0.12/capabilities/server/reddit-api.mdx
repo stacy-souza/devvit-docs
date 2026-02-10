@@ -1,9 +1,24 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Overview
+# Reddit API Overview
 
 The Reddit API allows you to read and write Reddit content such as posts / comments / upvotes, in order to integrate your app's behavior with the content of the community it's installed in.
+
+:::note
+Unlike traditional Reddit API usage, you don't need to create an app at [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) or manage API keys. Devvit handles authentication automatically when you enable the `reddit` permission in your app.
+:::
+
+## Private user data
+
+Devvit apps cannot access certain private user data. This data is private to the logged-in user and is not exposed through the Devvit platform:
+
+- **Subscribed subreddits** - The list of subreddits a user is subscribed to
+- **Upvoted and downvoted content** - Posts and comments the user has voted on
+- **Saved content** - Posts and comments the user has saved
+- **Recently viewed posts** - The user's browsing history
+- **Private profile information** - Any profile data that is not publicly visible
+- **Follows and friends** - The list of users someone follows (on reddit.com) or has friended (on Old Reddit)
 
 ## The Reddit client
 
