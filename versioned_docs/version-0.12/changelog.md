@@ -7,7 +7,43 @@ To use the latest version of Devvit:
 1. Run `npm install devvit@latest` to update your CLI.
 2. Run `npx devvit update app` to update your @devvit dependencies.
 
-**Please note**: you may see features available across Devvit packages that are not documented or noted in our changelog. These are experimental features that are not stable and are subject to change, or removal, from the platform. Please use caution when testing or implementing experimental features.  
+**Please note**: you may see features available across Devvit packages that are not documented or noted in our changelog. These are experimental features that are not stable and are subject to change, or removal, from the platform. Please use caution when testing or implementing experimental features.
+
+## Release 0.12.16  Subreddit APIs and Poll Post Updates
+**Release Date: Mar 23, 2026**  
+
+This release adds new APIs for smoother subreddit management, a unified rules model, and shared proto endpoints.  Also included: new poll post functionality.
+
+**Subreddit Management** 
+
+* `subreddit.updateSettings()` updates subreddit settings (this method only supports the settings currently exposed in the `SubredditSettings` type).  
+* `subreddit.updateRemovalReasons()` updates subreddit removal reasons.
+* `subreddit.deleteRemovalReasons()` deletes a subreddit removal reason.
+
+**Subreddit Rules** 
+
+* `subreddit.getRules()` (or `reddit.getRules()`) retrieves rules.   
+* `subreddit.createRule()` (or `reddit.createRule()`) creates rules.  
+* `subreddit.reorderRules()` (or `reddit.reorderRules()`) reorders rules.  
+* `rule.updateRule()` updates an existing rule.  
+* `rule.removeRule()` deletes a rule.
+
+Note: methods available on `reddit` provide the same functionality as their `subreddit` counterparts but do not require a subreddit instance.
+
+**Proto APIs**
+
+* `reddit.getBestPosts` returns a list of posts from the authenticated user’s front page. By default this runs as the app account, but it can be overridden on a per-app basis to always run as the user.  
+* `reddit.getDuplicatesForPosts` returns a list of other posts containing the same link as the input post.  
+* `reddit.showComment` unhides a comment that was hidden due to crowd control. Comments hidden for other reasons remain hidden.  
+* `comment.snoozeReports` and `post.snoozeReports` prevent reports for the input comment or post with the given reason from escalating to subreddit moderators for 7 days.  
+* `comment.unsnoozeReports` and `post.unsnoozeReports` remove the snooze applied by snoozeReports for the input comment or post.  
+* `comment.updateCrowdControlLevel` and `post.updateCrowdControlLevel` update the crowd control level for the comment or post (OFF, LENIENT, MEDIUM, or STRICT).  
+* `user.getTrophies` returns a list of trophies the user has earned.
+  
+**Poll Post Enhancements**
+
+* Introduces a `pollOption` field on the `Post` object to access poll options.  
+* Adds a `getCurrentUserPollOption()` method to retrieve the option selected by the current user (if any). This method needs `runAs` permission to work, so please contact us if you intend to use it.
 
 ## Devvit 0.12.15:  The Nothing-To-See-Here Release
 **Release Date: Mar 16, 2026**   
