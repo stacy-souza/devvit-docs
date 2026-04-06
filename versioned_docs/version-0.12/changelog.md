@@ -12,7 +12,7 @@ To use the latest version of Devvit:
 ## Release 0.12.18:  Custom Post  Styling, Video Comments, and Cache
 **Release Date: Apr 6, 2026**
 
-This release adds support for post styles, which lets you customize how your app posts look within Reddit. We’ve added [Creating a custom post](../capabilities/creating_custom_post.md)  documentation to walk you through building custom posts and configuring post styles. This includes options for setting background colors before your app loads, adjusting post height, and enabling custom share images when your app is shared.
+This release adds support for post styles, which lets you customize how your app posts look within Reddit. We’ve added [Creating a custom post](./capabilities/creating_custom_post.md)  documentation to walk you through building custom posts and configuring post styles. This includes options for setting background colors before your app loads, adjusting post height, and enabling custom share images when your app is shared.
 
 **Other fixes**
 * Added `video` to the `CommentMediaTypes` type. This fixes an issue where apps on subreddits with video comments crashed due to `getCurrentSubreddit()` throwing `invalid comment media type: video` error. 
