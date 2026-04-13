@@ -9,6 +9,15 @@ To use the latest version of Devvit:
 
 **Please note**: you may see features available across Devvit packages that are not documented or noted in our changelog. These are experimental features that are not stable and are subject to change, or removal, from the platform. Please use caution when testing or implementing experimental features.
 
+## Release 0.12.19: Minor Updates
+**Release Date: Apr 13, 2026**
+
+This release includes the following updates: 
+
+* Clarified that when `requestExpandedMode()` navigates to the same entrypoint, it may (but not always) trigger a reload.
+
+* Added a `post` parameter to the `shareSheet` effect to allow association with a specific post ID.
+
 ## Release 0.12.18:  Custom Post  Styling, Video Comments, and Cache
 **Release Date: Apr 6, 2026**
 
