@@ -294,6 +294,9 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Migration Guides",
       items: [
+        "guides/migrate/devvit-singleton",
+        "guides/migrate/devvit-web-experimental",
+        "guides/migrate/inline-web-view",
         {
           type: "category",
           label: "Splash Screens",
