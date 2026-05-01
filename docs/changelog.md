@@ -9,6 +9,21 @@ To use the latest version of Devvit:
 
 **Please note**: you may see features available across Devvit packages that are not documented or noted in our changelog. These are experimental features that are not stable and are subject to change, or removal, from the platform. Please use caution when testing or implementing experimental features.
 
+## Release 0.12.22: Profile Settings and Community Contributions
+**Release Date: May 1, 2026**
+
+This release adds support for editing your [app’s profile settings](./guides/faq.mdx#AppFeatures). You can now update your display name, public description, and NSFW flag directly from the **Developer Settings** tab, then save your changes in the Developer Portal to update the profile.
+
+**Bug Fixes**
+* Fixed a bug causing apps to throw `undefined undefined: undefined error` when making plugin calls.
+
+**Community Updates** 
+Shoutout to **fsvreddit** for these udpates: 
+* `User.nsfw` now correctly reports whether the user profile is NSFW.
+* `User.showNsfw` reports whether the user is over 18 and wishes to see NSFW content.
+* `User.hasRedditPremium` reports whether the user is enrolled in Reddit Premium/Reddit Gold.
+
+
 ## Release 0.12.21: Stability and Performance Improvements for Portal
 **Release Date: Apr 27, 2026**
 
