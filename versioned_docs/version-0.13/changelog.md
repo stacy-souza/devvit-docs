@@ -9,11 +9,17 @@ To use the latest version of Devvit:
 
 **Please note**: you may see features available across Devvit packages that are not documented or noted in our changelog. These are experimental features that are not stable and are subject to change, or removal, from the platform. Please use caution when testing or implementing experimental features.
 
+## Release 0.13.1: Maintenance Update
+
+**Release Date: June 2, 2026**
+
+No dev-facing changes today! This release just includes a few under-the-hood performance improvements.
+
 ## Release 0.13.0: Logged Out Users, Push Notifications, App Telemetry, and More!
 
 **Release Date: May 26, 2026**
 
-We're very excited to introduce Release 0.13.0, which introduces new features to attract logged out users, drive user engagement, and provide telemetry data to your game. We also have some breaking changes, which are going to be really important if your app currently uses Blocks functionality. Read on…
+We’re very excited to introduce Release 0.13.0, which introduces new features to attract logged out users, drive user engagement, and provide telemetry data to your game. We also have some breaking changes, which are going to be really important if your app currently uses Blocks functionality. Read on…
 
 :::note
 Upgrading to 0.13.0 is not required, but you should be aware that Blocks UI support will be removed from all clients (web, Android, iOS) on June 30, 2026.
@@ -23,7 +29,7 @@ Upgrading to 0.13.0 is not required, but you should be aware that Blocks UI supp
 
 _**Devvit Web**_
 
-If you use **Devvit Web** (`@devvit/web`), there's only one breaking change:
+If you use **Devvit Web** (`@devvit/web`), there’s only one breaking change:
 
 - The `splash` and `loading` screen support has been removed from `submitCustomPost()`. Please use a dedicated splash entrypoint HTML page instead as shown in the [project templates](examples/template-library.md).
 
@@ -73,16 +79,12 @@ If you use the old `@devvit/public-api`, **Blocks UI is no longer supported** in
 
 ### New Features
 
-- **Building for Logged Out Users**. Reddit has an untapped resource for your apps: [logged out users](guides/logged-out-users.mdx). We've given you a guide to design your game so that it can be played and shared with anyone, and you can prompt logged out users to subscribe to your game.
+- **Building for Logged Out Users**. Reddit has an untapped resource for your apps: [logged out users](guides/logged-out-users.mdx). We’ve given you a guide to design your game so that it can be played and shared with anyone, and you can prompt logged out users to subscribe to your game.
 
-- **Push Notifications (experimental)**. [Push notifications](capabilities/notifications/notifications-overview.md) help drive engagement, increase player retention, and build habit loops for players by bringing players back into your game at the right moments. We've also included detailed support for adding streaks to your game to encourage daily play!
+- **Push Notifications (experimental)**. [Push notifications](capabilities/notifications/notifications-overview.md) help drive engagement, increase player retention, and build habit loops for players by bringing players back into your game at the right moments. We’ve also included detailed support for adding streaks to your game to encourage daily play!
 
-- **Devvit Journeys (experimental)**. We've added a new telemetry feature that tracks the full lifecycle of a user session. [Devvit Journeys](capabilities/analytics/analytics-overview.md) gives you a new way to understand how players move through your game session from start to finish, making it easier to see where users engage, where they drop off, and which moments lead to completion.
+- **Devvit Journeys (experimental)**. We’ve added a new telemetry feature that tracks the full lifecycle of a user session. [Devvit Journeys](capabilities/analytics/analytics-overview.md) gives you a new way to understand how players move through your game session from start to finish, making it easier to see where users engage, where they drop off, and which moments lead to completion.
 
 :::note
 Experimental features are gated beta programs. Access to Push Notifications and Devvit Journeys is currently limited and requires approval before it can be functional in your app.  
 :::
-
----
-
-Looking for older release notes? See the [0.12 changelog](/0.12/changelog).
