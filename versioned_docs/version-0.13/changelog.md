@@ -9,15 +9,21 @@ To use the latest version of Devvit:
 
 **Please note**: you may see features available across Devvit packages that are not documented or noted in our changelog. These are experimental features that are not stable and are subject to change, or removal, from the platform. Please use caution when testing or implementing experimental features.
 
+## Relese 0.13.4: Updated Redis Docs
+**Release Date: June 15, 2026**
+
+In this release, we’ve updated our [Redis](./capabilities/server/redis.mdx) documentation based on your feedback, adding clearer guidance around key design, data structures, shared states, and scheduled maintenance.
+
+
 ## Release 0.13.3: Devvit Journeys: a Dashboard and Receipts
 **Release Date: June 8, 2026**
 
-If you’re enrolled in the [Devvit Journeys](../docs/capabilities/analytics/devvit-journeys) beta, you’ll see a couple of new features in 0.13.3: 
+If you’re enrolled in the [Devvit Journeys](./capabilities/analytics/devvit-journeys.md) beta, you’ll see a couple of new features in 0.13.3: 
 
-- A [new dashboard](../docs/capabilities/analytics/journeys-dashboard) that surfaces your app’s activity and performance metrics—including starts, completions, engagement, session frequency, and duration. These insights help you understand how users progress through your app and evaluate the effectiveness of your design. 
-- [Event receipts](../docs/capabilities/analytics/journeys-receipts) included in the API responses that provide feedback on how telemetry events were processed. Receipts help you verify whether an event was recorded successfully or identify when it was skipped, rejected, rate limited, or could not be confirmed, making it easier to debug integrations and validate telemetry behavior.
+- A [new dashboard](./capabilities/analytics/journeys-dashboard.md) that surfaces your app’s activity and performance metrics—including starts, completions, engagement, session frequency, and duration. These insights help you understand how users progress through your app and evaluate the effectiveness of your design. 
+- [Event receipts](./capabilities/analytics/journeys-receipts.md) included in the API responses that provide feedback on how telemetry events were processed. Receipts help you verify whether an event was recorded successfully or identify when it was skipped, rejected, rate limited, or could not be confirmed, making it easier to debug integrations and validate telemetry behavior.
 
-Also in this release: we’ve expanded the available in-app [purchase price tiers](../docs/capabilities/earn-money/payments/payments_add#price-products), giving you more flexibility to price products and subscriptions.
+Also in this release: we’ve expanded the available in-app [purchase price tiers](./earn-money/payments/payments_add.mdx#price-products), giving you more flexibility to price products and subscriptions.
 
 ## Release 0.13.2: More Maintenance
 
