@@ -158,7 +158,6 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Analytics",
       items: [
-        "capabilities/analytics/analytics-overview", 
         "capabilities/analytics/devvit-journeys",
         "capabilities/analytics/journeys-dashboard",
         "capabilities/analytics/journeys-receipts"
@@ -270,6 +269,7 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Storing Data",
       items: [
+        "capabilities/server/blob-storage",
         "capabilities/server/redis",
         "capabilities/server/cache-helper",
         "capabilities/server/post-data",
