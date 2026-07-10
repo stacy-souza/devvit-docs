@@ -31,7 +31,6 @@ Because these methods were marked as experimental, this breaking change was made
 * Added support for Vite 8, which resolves the deprecation warnings that have appeared in projects created over the past few months.
 * Fixed an issue where the `heightPixels` parameter was ignored during post creation and always defaulted to 512. The specified `heightPixels` value is now correctly applied.
 
-
 ## Release 0.13.6:   External Endpoints and App Mentions Triggers (Limited Access)
 **Release Date: June 29, 2026**
 
